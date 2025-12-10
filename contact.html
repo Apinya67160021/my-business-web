@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ติดต่อ Apinya shop — ฟอร์มติดต่อ ที่อยู่ และแผนที่">
+  <title>ติดต่อ - Apinya shop</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">กลับหน้าแรก</a>
+    <h1>ติดต่อเรา</h1>
+  </header>
+
+  <!-- 4.1 Contact Form -->
+  <section>
+    <form id="contactForm" novalidate>
+      <label for="name">ชื่อ</label>
+      <fieldset>
+      <input type="text" id="name" name="name" required placeholder="ชื่อของคุณ">
+      </fieldset>
+
+      <label for="email">อีเมล</label>
+      <fieldset>
+      <input type="email" id="email" name="email" required placeholder="your@email.com">
+      </fieldset>
+
+      <label for="phone">เบอร์โทรศัพท์ (ถ้ามี)</label>
+      <fieldset>
+      <input type="tel" id="phone" name="phone" pattern="[\d\s+-]{7,15}" placeholder="081-234-5678">
+      </fieldset>
+
+      <label for="message">ข้อความ</label>
+      <fieldset>
+      <textarea id="message" name="message" rows="5" cols="40" placeholder="รายละเอียดการติดต่อ/จอง"></textarea>
+      </fieldset>
+
+      <div id="formErrors" class="error" aria-live="polite"></div>
+
+      <button type="submit">ส่งข้อความ</button>
+    </form>
+  </section>
+
+ 
