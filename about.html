@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="เกี่ยวกับ Apinya shop — เรื่องราว ทีมงาน และพันธกิจ">
-  <title>เกี่ยวกับ - Apinya shop</title>
-  <style>
-    body{font-family:Inter, Arial, sans-serif; margin:0; padding:20px; color:#222;}
-    header, footer{padding:12px 0;}
-    .team{display:flex; gap:16px; flex-wrap:wrap;}
-    figure{width:220px; margin:0; background:#fff; padding:8px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06);}
-    figure img{width:100%; height:160px; object-fit:cover; border-radius:6px;}
-    figcaption{padding:8px;}
-  </style>
-</head>
-<body>
-  <header>
-    <a href="index.html">◀ กลับหน้าแรก</a>
-    <h1>เกี่ยวกับ Apinya shop</h1>
-  </header>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="เกี่ยวกับ Apinya shop — เรื่องราว ทีมงาน และพันธกิจ"
+    />
+    <title>เกี่ยวกับ - Apinya shop</title>
+    <style>
+      .team {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
 
-  <!-- 2.1 เรื่องราวของบริษัท -->
-  <section>
-    <h2>เรื่องราวของเรา</h2>
-    <p>Apinya shop ก่อตั้งเมื่อ 2 วันก่อน เพื่อผู้หญิงที่ต้องการเสริมความมั่นใจในการเลือกชุดที่เหมาะสมกับตนเองได้ง่ายขึ้น โดยไม่ต้องคิดมากมายก่ายกอง</p>
-  </section>
+      .team figure {
+        text-align: center;
+        margin: 0;
+      }
 
+      .team img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">กลับหน้าแรก</a>
+      <h1>เกี่ยวกับ Apinya shop</h1>
+    </header>
 
-  <!-- 2.2 ทีม (ใช้ <figure> สำหรับแต่ละคน) -->
-  <section>
-    <h2>ทีมงานของเรา</h2>
-    <div class="team" role="list">
-      <figure role="listitem">
-        <img src="images/team1.png" alt="ผู้ก่อตั้ง">
-        <figcaption>
-          <strong>เหมยลี่ — ผู้ก่อตั้ง</strong>
-          <p>ออกแบบและคัดสรรคอลเลคชัน</p>
-        </figcaption>
-      </figure>
+    <!-- 2.1 เรื่องราวของบริษัท -->
+    <section>
+      <h2>เรื่องราวของเรา</h2>
+      <p>
+        Apinya shop ก่อตั้งเมื่อ 2 วันก่อน
+        เพื่อผู้หญิงที่ต้องการเสริมความมั่นใจในการเลือกชุดที่เหมาะสมกับตนเองได้ง่ายขึ้น
+        โดยไม่ต้องคิดมากมายก่ายกอง
+      </p>
+    </section>
 
-      <figure role="listitem">
-        <img src="images/team2.png" alt="หัวหน้าดีไซน์">
-        <figcaption>
-          <strong>ภีมมี่ — หัวหน้าดีไซน์</strong>
-          <p>ออกแบบแพทเทิร์นและดูแลการผลิต</p>
-        </figcaption>
-      </figure>
+    <!-- 2.2 ทีม -->
+    <section>
+      <h2>ทีมงานของเรา</h2>
+      <div class="team">
+        <figure>
+          <img src="images/team1.png" alt="ผู้ก่อตั้ง" />
+          <figcaption>
+            <br />
+            <strong>เหมยลี่ — ผู้ก่อตั้ง</strong>
+            <p>ออกแบบและคัดสรรคอลเลคชัน</p>
+          </figcaption>
+        </figure>
 
-      <figure role="listitem">
-        <img src="images/team3.png" alt="ผู้ดูแลลูกค้า">
-        <figcaption>
-          <strong>อิ้อิ้ — ผู้ดูแลลูกค้า</strong>
-          <p>บริการลูกค้าและการจองนัดแมตช์ลุค</p>
-        </figcaption>
-      </figure>
-    </div>
-  </section>
+        <figure>
+          <img src="images/team2.png" alt="หัวหน้าดีไซน์" />
+          <figcaption>
+            <br />
+            <strong>ภีมมี่ — หัวหน้าดีไซน์</strong>
+            <p>ออกแบบแพทเทิร์นและดูแลการผลิต</p>
+          </figcaption>
+        </figure>
 
+        <figure>
+          <img src="images/team3.png" alt="ผู้ดูแลลูกค้า" />
+          <figcaption>
+            <br />
+            <strong>อิ้อิ้ — ผู้ดูแลลูกค้า</strong>
+            <p>บริการลูกค้าและการจองนัดแมตช์ลุค</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <!-- 2.3 Mission/Vision -->
-  <section>
-    <h2>พันธกิจ (Mission)</h2>
-    <p>ให้ผู้หญิงค้นพบสไตล์ที่ทำให้รู้สึกมั่นใจและเป็นตัวเอง</p>
+    <!-- 2.3 Mission/Vision -->
+    <section>
+      <h2>พันธกิจ (Mission)</h2>
+      <p>ให้ผู้หญิงค้นพบสไตล์ที่ทำให้รู้สึกมั่นใจและเป็นตัวเอง</p>
 
-    <h2>วิสัยทัศน์ (Vision)</h2>
-    <p>เป็นแบรนด์ที่ผู้หญิงนึกถึงเมื่ออยากได้ลุคทั้งทางการและลำลอง</p>
-  </section>
- 
+      <h2>วิสัยทัศน์ (Vision)</h2>
+      <p>เป็นแบรนด์ที่ผู้หญิงนึกถึงเมื่ออยากได้ลุคทั้งทางการและลำลอง</p>
+    </section>
 
-  <!-- 2.4 Link กลับหน้าแรก -->
-  <footer>
-    <p><a href="index.html">กลับหน้าแรก</a></p>
-  </footer>
-</body>
+    <!-- 2.4 Link กลับหน้าแรก -->
+    <footer>
+      <p><a href="index.html">กลับหน้าแรก</a></p>
+    </footer>
+  </body>
 </html>
